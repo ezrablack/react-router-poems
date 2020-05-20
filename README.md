@@ -49,7 +49,7 @@ Discuss these questions with your table
 
 
 ### Deliverables
-Complete these solo (feel free to reach out to other for help, but this should not be a full-on group activity)
+Complete these solo (feel free to reach out to others for help, but this should not be a full-on group activity like the discussion above)
 
 To complete these deliverables, you will need to install React Router by running `npm install react-router react-router-dom` 
 
