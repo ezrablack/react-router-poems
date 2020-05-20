@@ -73,4 +73,3 @@ To complete these deliverables, you will need to install React Router by running
 
 #### PoemEdit
 * After the fetch request to update the poem, the user should be redirected to the PoemShow component, which should show the details for the specific poem clicked
-> Hint: you will need to use a param in the route to accomplish this
