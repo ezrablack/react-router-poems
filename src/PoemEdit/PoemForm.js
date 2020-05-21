@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router'
 
 export const PoemForm = (props) => {
     
     const { poem } = props
+
+    let history = useHistory()
 
     const [formValues, setFormValues] = useState({
         name: poem.name,
@@ -21,6 +24,7 @@ export const PoemForm = (props) => {
             },
             body: JSON.stringify(formValues)
         })
+        .then(() => history.push(`/show/${poem.id}`))
     }
 
     return (
@@ -40,7 +44,10 @@ export const PoemForm = (props) => {
             </div>
             <div className="actions">
                 <button className="ui green button" onClick={handleSubmit}>Submit</button>
-                <button className="ui red button">Cancel</button>
+                <button 
+                className="ui red button"
+                onClick={() => history.push(`/show/${poem.id}`)}
+                >Cancel</button>
             </div>
         </div>
     )

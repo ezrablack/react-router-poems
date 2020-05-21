@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
 
 export const PoemNew = function () {
 
@@ -6,6 +7,8 @@ export const PoemNew = function () {
         name: '',
         content: ''
     })
+
+    let history = useHistory()
 
     let setName = e => setState({ ...formValues, name: e.target.value })
 
@@ -19,6 +22,7 @@ export const PoemNew = function () {
             },
             body: JSON.stringify(formValues)
         })
+        .then(()=> history.push('/index'))
     }
 
     return (
@@ -33,6 +37,7 @@ export const PoemNew = function () {
                 <textarea value={formValues.content} onChange={setContent} />
             </div>
             <button className="ui green button" onClick={handleSubmit} >Create</button>
+            <button className="ui red button" onClick={() => history.push('/index')}>Cancel</button>
         </div>
     )
 }

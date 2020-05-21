@@ -51,24 +51,24 @@ Discuss these questions with your table
 ### Deliverables
 Complete these solo (feel free to reach out to others for help, but this should not be a full-on group activity like the discussion above)
 
-To complete these deliverables, you will need to install React Router by running `npm install react-router react-router-dom` 
+To complete these deliverables, you will need to install React Router by running `  ` 
 
 > Use the React Router lecture (linked in learn.co) and React Router's documentation (https://reacttraining.com/react-router/web/guides/quick-start) as a guide to add routing to tie these pages together.
 
 > You will need to define `Route`'s in App, and then use `useParams` and `history.push` where applicable to connect each of the App's components to those `Route`s.
 
 #### PoemIndex
-* When a user clicks on "Create New Poem", they should be redirected to the PoemNew component
-* When a user clicks on the "See Details" button of a specific poem, they should be routed to the PoemShow component, which should show the details for the specific poem clicked
+DONE * When a user clicks on "Create New Poem", they should be redirected to the PoemNew component
+DONE* When a user clicks on the "See Details" button of a specific poem, they should be routed to the PoemShow component, which should show the details for the specific poem clicked
 > Hint: you will need to use a param in the route to accomplish this
 
 #### PoemNew
-* After the fetch request to make a new poem, the user should be redirected to the PoemIndex component
+DONE* After the fetch request to make a new poem, the user should be redirected to the PoemIndex component
 
 #### PoemShow
-* When a user clicks on the "Edit" button, they should be routed to the PoemEdit component, which should allow the user to edit the specific poem clicked
+DONE* When a user clicks on the "Edit" button, they should be routed to the PoemEdit component, which should allow the user to edit the specific poem clicked
 > Hint: you will need to use a param in the route to accomplish this
-* After the fetch request to delete the poem, the user should be redirected to the PoemIndex component
+DONE* After the fetch request to delete the poem, the user should be redirected to the PoemIndex component
 
 
 #### PoemEdit

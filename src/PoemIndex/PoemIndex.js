@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { PoemCard } from './PoemCard';
+import { useHistory } from 'react-router'
 
 export function PoemIndex(){
     let [ poems, setPoem ] = useState([])
+    let history = useHistory()
 
     useEffect(() => {
         fetch(`http://localhost:3000/poems`)
@@ -18,7 +20,10 @@ export function PoemIndex(){
                     poem={poem}
                 />
             ))}
-            <button className="ui button green">Add New Poem</button>
+            <button 
+            onClick={() => history.push('/new')}
+            className="ui button green"
+            >Add New Poem</button>
         </div>
     )
 }
